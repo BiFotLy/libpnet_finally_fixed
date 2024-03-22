@@ -97,7 +97,6 @@ pub enum ChannelType {
 }
 
 /// A channel for sending and receiving at the data link layer.
-#[non_exhaustive]
 pub enum Channel {
     /// A datalink channel which sends and receives Ethernet packets.
     Ethernet(Box<dyn DataLinkSender>, Box<dyn DataLinkReceiver>),
